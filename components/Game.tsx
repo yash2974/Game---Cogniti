@@ -14,14 +14,9 @@ import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import { RootStack } from '../App';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebaseconfig';
 import { useScore } from './ScoreProvider';
-
-
-
-
 import Svg, { Line } from 'react-native-svg';
 
 type GameScreenNavigationProp = NativeStackNavigationProp<RootStack, 'Game'>;
